@@ -9,12 +9,19 @@ export let oddOrEven = (num) => {
 
 //
 export let primeNumber = (num) => {
-    for (let i = 2; i <= num; i++){
-        if (num % 2 === 0) {
-            return 'false'
-        }
-        else{
-            return 'true'
+    if(num === 1 ){
+        return 'true'
+    }
+    else{
+        for (let i = 2; i <= num; i++){
+            if (num % 2 === 0 ) {
+                return 'false'
+            }
+            else{
+                return 'true'
+            }
         }
     }
+
+    
 }
